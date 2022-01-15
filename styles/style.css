@@ -15,8 +15,7 @@ main{
     background-color: #FFFFFF;
     Width: 870px;
     padding: 30px
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
 /* top players styles */
 .top players{
@@ -81,6 +80,64 @@ hr{
 .blog-author a{
     text-decoration: none;
     background: #562EFF;
-
 }
+
+
+/*---------------------
+ courses styles start
+ ----------------------- */
+ .courses{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 24px;
+ }
+ .course .course-banner img{
+    width: 224px;
+    height: 104px;
+ }
+ .course-info{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .fa-star{
+     font-size: 12px;
+ }
+ .fa-star.filled{
+    color: #FFC014;
+ } 
+ .fa-star.empty{
+    color: #AEAEAE;
+ }
+ /*-----------------
+    media quries 
+  ------------------*/
+
+  /*--------------------
+     mobile devices
+  --------------------*/
+  @media only screen and (max-width:688px) {
+      .container{
+          width: 100%;
+      }
+      .players{
+          grid-template-columns: repeat(1, fr);
+          
+      }
+      .player, .blog{
+          flex-direction: column;
+      }
+    
+      
+      
+  }
+  /*----------------- 
+  tablet devices
+  ------------------*/
+
+/* @media  only screen and (min-width:688px)and (max-width:992px) {
+    .players{
+        background-color: red;
+    }
+} */
 
